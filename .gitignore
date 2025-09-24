@@ -1,0 +1,10 @@
+# Ext JS build output
+/build/
+/bootstrap.js
+/bootstrap.css
+/.sencha
+
+# IDE / system files
+/.vscode/
+/node_modules/
+/*.log

@@ -1,0 +1,54 @@
+{
+    "name": "AntiGuru",
+    "version": "1.0.0.0",
+    "indexHtmlPath": "index.html",
+    "classpath": [
+        "app",
+        "${toolkit.name}/src"
+    ],
+    "overrides": [
+        "overrides",
+        "${toolkit.name}/overrides"
+    ],
+    "framework": "ext",
+    "requires": [
+        "font-awesome"
+    ],
+    "js": [
+        {
+            "path": "app.js",
+            "bundle": true
+        }
+    ],
+    "classic": {
+        "js": [
+            {
+                "path": "${framework.dir}/build/ext-all-rtl-debug.js"
+            }
+        ]
+    },
+    "modern": {
+        "js": [
+            {
+                "path": "${framework.dir}/build/ext-modern-all-debug.js"
+            }
+        ]
+    },
+    "css": [
+        {
+            "path": "build/development/AntiGuru/resources/AntiGuru-all.css",
+            "bundle": true,
+            "exclude": ["fashion"]
+        }
+    ],
+    "builds": {
+        "classic": {
+            "toolkit": "classic",
+            "theme": "theme-triton"
+        },
+        "modern": {
+            "toolkit": "modern",
+            "theme": "theme-triton"
+        }
+    }
+}
